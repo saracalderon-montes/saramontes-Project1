@@ -13,32 +13,34 @@
 <body>
 <header>
     <div class="flexContainer">
+        <div id="headerName">
         <p>Sara Montes</p>
     </div>
+
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>
+    <section class="flexItem shadow">
         <h1>About This Project</h1>
         <p>This mockup demonstrates key web design concepts for students learning HTML, CSS, and flexbox layouts.<br>
         Each section showcases different layout techniques.</p>
     </section>
 
-    <section>
+    <section class="flexItem shadow">
         <div class="flexContainer">
             <div class="flexItem">
                 <p>&#x1F4DA;</p>
             </div>
 
             <div class="flexItem">
-                <h2>Out Mission</h2>
+                <h2>Our Mission</h2>
                 <p>We believe in making web design education accessible and practical. <br>
                 This project provides students with a real-world example <br>
                 they can study and recreate.</p>
@@ -49,14 +51,52 @@
         </div>
     </section>
 
-    <section></section>
+    <section>
+        <div class="flexContainer">
+            <div class="flexItem shadow">
+                <h2>3</h2>
+                <p>Pages</p>
+            </div>
 
-    <sections></sections>
+             <div class="flexItem shadow">
+                <h2>10+</h2>
+                <p>Components</p>
+            </div>
+
+            <div class="flexItem shadow">
+                <h2>100%</h2>
+                <p>Flexbox</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flexItem shadow">       
+        <h2>Meet the Team</h2>
+        <div class="flexContainer">
+            <div>
+                <p class="circleGreen">&#x1F468;</p>
+                <h3>Sara Montes Developer</h3>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div>
+                <p class="circleOrange">&#x1F469;</p>
+                <h3>Sara Montes Designer</h3>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div>
+                <p class="circlePurple">&#x1F468;</p>
+                <h3>Viviane Instructor</h3>
+                <p>Web Design Instructor</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
-    <p>© 2026 Student Portfolio. All rights reserved.</p>
-    <ul>
+    <p id="footerText">© 2026 Student Portfolio. All rights reserved.</p>
+    <ul id="footerNav">
         <li> Jump Link 1</li>
         <li> Jump Link 2</li>
     </ul>

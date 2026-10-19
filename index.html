@@ -5,29 +5,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Home Page</title>
+<title>Home</title>
 
 <link rel="stylesheet" href="css/style.css">  
 </head>
 
 
-
 <body>
 <header>
     <div class="flexContainer">
+        <div id="headerName">
         <p>Sara Montes</p>
     </div>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+            
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section>
+    <section class="flexItem shadow">
         <div class="flexContainer">
             <div class="flexItem">
                 <h1>Welcome to My Portfolio</h1>
@@ -35,6 +37,7 @@
                 Explore the pages to see different layout techniques in action.</p>
                 <button> Get Started</button>
             </div>
+
             <div class="flexItem">
                 <p id="heroIcon">&#x1F393;</p>
             </div>
@@ -44,19 +47,19 @@
     <section>
         <h2>Features</h2>
         <div class="flexContainer">
-            <div class="shadow_flexItem">
+            <div class="flexItem shadow">
                 <p class="circleBlue">&#x1F4BB;</p>
                 <h3>Responsive Design</h3>
                 <p>Learn how to create layouts that work on <br>all devices using flexbox properties.</p>
             </div>
 
-            <div class="shadow_flexItem">
+            <div class="flexItem shadow">
                 <p class="circleGreen">&#x1F3A8;</p>
                 <h3>Modern Styling</h3>
                 <p>Practice CSS styling with colors, shadows, <br>and transitions for polished designs.</p>
             </div>
 
-            <div class="shadow_flexItem">
+            <div class="flexItem shadow">
                 <p class="circlePurple">&#x1F680;</p>
                 <h3>Easy Navigation</h3>
                 <p>Build an intuitive navigation menu using <br>flexbox for perfect alignmnet.</p>
@@ -65,7 +68,7 @@
     </section>
 
 
-    <section>
+    <section class="flexItem shadow">
         <h2>About This Project</h2>
         <div class="flexContainer">
             <div class="flexItem">
@@ -96,8 +99,8 @@
 </main>
 
 <footer>
-    <p>© 2026 Student Portfolio. All rights reserved.</p>
-    <ul>
+    <p id="footerText">© 2026 Student Portfolio. All rights reserved.</p>
+    <ul id="footerNav">
         <li> Jump Link 1</li>
         <li> Jump Link 2</li>
     </ul>

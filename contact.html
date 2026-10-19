@@ -13,23 +13,89 @@
 <body>
 <header>
     <div class="flexContainer">
+        <div id="headerName">
         <p>Sara Montes</p>
     </div>
+
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
+    <section class="flexItem shadow">
+        <h1>Contact Us</h1>
+        <p>Have questions? Fill out the form below and we'll get back to you soon!</p>
+    </section>
+
+    <section>
+        <h4>Send us a Message</h4>
+        <div class="flexContainer">
+            <div class="flexItem shadow">
+                <form action="/action_page.php" autocomplete="on">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname"><br><br>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+      
+        <div class="flexContainer shadow">
+            <div class="flexItem">
+            <h4>Contact Info</h4>  
+            <p class="circleBlue">&#x1F4E7;</p>
+            <p class="circleGreen">&#x1F4F1;</p>
+            <p class="circlePurple">&#x1F4CD;</p>
+            </div>
+
+            <div class="flexItem">
+                <p><strong>Email</strong></p>
+                <p>info@student.edu</p>
+
+                <p><strong>Phone</strong></p>
+                <p>(555) 123-4567</p>
+
+                <p><strong>Location</strong></p>
+                <p>123 Learning Lane<br>Student City,SC 12345</p>
+            </div>
+        </div>
+
+        <div class="flexContainer shadow">
+            <div class="flexItem">
+            <h4>Office Hours</h4>  
+                <ul>
+                    <li>Monday - Friday:</li>
+                    <li>Saturday:</li>
+                    <li>Sunday:</li>
+                </ul>
+            </div>
+
+            <div class="flexItem">
+                <ul>
+                    <li><strong>9am - 5pm</strong></li>
+                    <li><strong>10am - 2pm</strong></li>
+                    <li><strong>Closed</strong></li>
+                </ul>
+            </div>            
+        </div>
+
+    </section>
+
+
 
 </main>
+
 <footer>
-    <p>© 2026 Student Portfolio. All rights reserved.</p>
-    <ul>
+    <p id="footerText">© 2026 Student Portfolio. All rights reserved.</p>
+    <ul id="footerNav">
         <li> Jump Link 1</li>
         <li> Jump Link 2</li>
     </ul>
