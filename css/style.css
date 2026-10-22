@@ -26,12 +26,19 @@ nav{
 
 nav a{
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 nav ul li{
     padding: 5px 25px 25px 5px;
     list-style-type: none;
     display: inline-block;
+}
+
+nav:hover{
+    background-color: #111827;
+    border: none;
+    border-radius: 10px;
 }
 
 main{
@@ -105,6 +112,17 @@ section{
     padding: 0%;
 }
 
+.circleOrange{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #ea580c;
+    text-align: center;
+    font-size: 60px;
+    margin: 0%;
+    padding: 0%;
+}
+
 footer{
     padding: 20px 150px 20px;
     background-color: #111827;
@@ -132,4 +150,31 @@ footer ul li{
 #footerNav {
     display: flex;
     justify-content: flex-end;
+}
+
+.listCheckmark{
+    list-style: none;
+    margin: 25px;
+}
+
+ul.listCheckmark li:before{
+    content: "✓";
+    font-weight: bold;
+    left: -25px;
+}
+
+button{
+    background-color: #1D4ED8;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #111827;
 }
