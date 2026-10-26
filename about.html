@@ -18,7 +18,7 @@
     </div>
 
     <nav>
-        <ul>
+        <ul id="jump1">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="about.html">About</a></li>
             <li> <a href="contact.html">Contact</a></li>
@@ -27,16 +27,16 @@
 </header>
 
 <main>
-    <section class="flexItem shadow">
-        <h1>About This Project</h1>
-        <p>This mockup demonstrates key web design concepts for students learning HTML, CSS, and flexbox layouts.<br>
-        Each section showcases different layout techniques.</p>
+    <section class="flexItem shadow" id="textCenter">
+        <h1 id="jump2" >About This Project</h1>
+        <p>This mockup demonstrates key web design concepts for students learning HTML, CSS,<br>
+        and flexbox layouts. Each section showcases different layout techniques.</p>
     </section>
 
     <section class="flexItem shadow">
         <div class="flexContainer">
             <div class="flexItem">
-                <p>&#x1F4DA;</p>
+                <p class="mission">&#x1F4DA;</p>
             </div>
 
             <div class="flexItem">
@@ -53,25 +53,25 @@
 
     <section>
         <div class="flexContainer">
-            <div class="flexItem shadow">
+            <div class="flexItem shadow squareBlue">
                 <h2>3</h2>
                 <p>Pages</p>
             </div>
 
-             <div class="flexItem shadow">
+             <div class="flexItem shadow squarePurple">
                 <h2>10+</h2>
                 <p>Components</p>
             </div>
 
-            <div class="flexItem shadow">
+            <div class="flexItem shadow squareGreen">
                 <h2>100%</h2>
                 <p>Flexbox</p>
             </div>
         </div>
     </section>
 
-    <section class="flexItem shadow">       
-        <h2>Meet the Team</h2>
+    <section class="flexItem shadow">
+        <h2 id="textCenter">Meet the Team</h2>
         <div class="flexContainer">
             <div>
                 <p class="circleGreen">&#x1F468;</p>
@@ -97,8 +97,8 @@
 <footer>
     <p id="footerText">© 2026 Student Portfolio. All rights reserved.</p>
     <ul id="footerNav">
-        <li> Jump Link 1</li>
-        <li> Jump Link 2</li>
+        <li><a href="#jump1">Link 1</a></li>
+        <li><a href="#jump2">Link 2</a></li>
     </ul>
 </footer>
 </body>

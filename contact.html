@@ -18,7 +18,7 @@
     </div>
 
     <nav>
-        <ul>
+        <ul id="jump1">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="about.html">About</a></li>
             <li> <a href="contact.html">Contact</a></li>
@@ -27,24 +27,37 @@
 </header>
 
 <main>
-    <section class="flexItem shadow">
-        <h1>Contact Us</h1>
+    <section class="flexItem shadow" id="textCenter">
+        <h1 id="jump2">Contact Us</h1>
         <p>Have questions? Fill out the form below and we'll get back to you soon!</p>
     </section>
 
     <section>
-        <h4>Send us a Message</h4>
         <div class="flexContainer">
-            <div class="flexItem shadow">
-                <form action="/action_page.php" autocomplete="on">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname"><br><br>
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" autocomplete="off"><br><br>
-                    <input type="submit" value="submit">
-                </form>
+        <div class="flexItem shadow">
+
+            <h4>Send us a Message</h4>
+
+            <form action="scalderonmontes@student.alamo.edu" method="post" enctype="text/plain">
+                <label for="name">Full Name *</label><br>
+                <input type="text" id="name" name="name" value="Enter your full name"><br><br>
+
+                <label for="email">Email Address *</label><br>
+                <input type="email" id="email" name="email" value="your.email@example.com"><br><br>
+
+                <label for="subject">Subject *</label><br>
+                <select id="subject" name="subject">
+                    <option value="medical">This email is medical in nature</option>
+                    <option value="personal">This email is personal in nature</option>
+                    <option value="group">This email is for a group</option>
+                </select> <br><br>
+
+                <label for="message">Message *</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <input type="submit" value="Send Message" class="sendButton">
+            </form>
+
             </div>
         </div>
       
@@ -64,14 +77,14 @@
                 <p>(555) 123-4567</p>
 
                 <p><strong>Location</strong></p>
-                <p>123 Learning Lane<br>Student City,SC 12345</p>
+                <p>123 Learning Lane<br>Student City, SC 12345</p>
             </div>
         </div>
 
-        <div class="flexContainer shadow">
+        <div class="flexContainer shadow officeHours">
             <div class="flexItem">
             <h4>Office Hours</h4>  
-                <ul>
+                <ul class="noBulletpoints">
                     <li>Monday - Friday:</li>
                     <li>Saturday:</li>
                     <li>Sunday:</li>
@@ -79,7 +92,7 @@
             </div>
 
             <div class="flexItem">
-                <ul>
+                <ul class="noBulletpoints">
                     <li><strong>9am - 5pm</strong></li>
                     <li><strong>10am - 2pm</strong></li>
                     <li><strong>Closed</strong></li>
@@ -96,8 +109,8 @@
 <footer>
     <p id="footerText">© 2026 Student Portfolio. All rights reserved.</p>
     <ul id="footerNav">
-        <li> Jump Link 1</li>
-        <li> Jump Link 2</li>
+        <li><a href="#jump1">Link 1</a></li>
+        <li><a href="#jump2">Link 2</a></li>
     </ul>
 </footer>
 </body>

@@ -14,19 +14,22 @@ header{
     flex: 1;
     color: #FFFFFF;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 nav{
     display: flex;
     justify-content: flex-end;
     font-size: 24px;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
 nav a{
     color: #FFFFFF;
     text-decoration: none;
+    padding: 10px 15px 10px;
+    display: block; 
 }
 
 nav ul li{
@@ -35,10 +38,10 @@ nav ul li{
     display: inline-block;
 }
 
-nav:hover{
+nav a:hover{
     background-color: #111827;
-    border: none;
     border-radius: 10px;
+    padding: 10px 15px 10px;
 }
 
 main{
@@ -49,33 +52,41 @@ main{
 .flexContainer{
     display: -webkit-flex;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
+    justify-content: center;
 }
 
-flexItem{
+.flexItem{
     gap: 20px;
     padding: 20px;
-    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 section{
-    padding: 32px;
-    margin: 20px 0px 20px;
+    margin: 40px 120px 40px;
 }
 
 .shadow{
     box-shadow: 10px 10px 5px lightgray;
-    border: 1px solid gray;
+    border: 1px solid #e3e1e1;
     border-radius: 20px;
 }
 
 #heroIcon{
     background-color: #1D4ED8;
     border-radius: 10px;
-    font-size: 80px;
+    font-size: 130px;
     margin: 0;
-    height: 200px;
+    height: 284px;
+    width: 309px;
+    text-align: center;
+    float: right;
+}
+
+#textCenter{
     text-align: center;
 }
 
@@ -133,6 +144,7 @@ footer a{
     color: #FFFFFF;
     display: -webkit-flex;
     display: flex;
+    text-decoration: none;
 }
 
 footer ul li{
@@ -154,7 +166,7 @@ footer ul li{
 
 .listCheckmark{
     list-style: none;
-    margin: 25px;
+    margin: 20px;
 }
 
 ul.listCheckmark li:before{
@@ -177,4 +189,65 @@ button{
 
 button:hover{
     background-color: #111827;
+}
+
+.mission{
+    background-color: #1D4ED8;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+.squareBlue{
+    text-align: center;
+    background-color: #1D4ED8;
+    text-spacing-trim: 0;
+    color: #FFFFFF;
+    line-height: 2px;
+    padding: 50px;
+}
+
+.squarePurple{
+    text-align: center;
+    background-color: #7e22ce;
+    text-spacing-trim: 0;
+    color: #FFFFFF;
+    line-height: 2px;
+    padding: 50px;
+}
+
+.squareGreen{
+    text-align: center;
+    background-color: #15803D;
+    text-spacing-trim: 0;
+    color: #FFFFFF;
+    line-height: 2px;
+    padding: 50px;
+}
+
+.sendButton{
+    background-color: #1D4ED8;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.noBulletpoints{
+    list-style: none;
+    margin: 20px;
+}
+
+
+.officeHours{
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    padding: 10px;
 }
